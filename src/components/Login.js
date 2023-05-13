@@ -21,12 +21,12 @@ let onsubmithandler=()=>{
       <form onSubmit={onsubmithandler} className='mt-5 d-flex container text-center text-white bg-secondary flex-column justify-content-center align-items-center'>
         <h1 className='mt-3'>Login Form</h1><br/>
         <div>
-        <label htmlFor='email'>Email :</label>
-        <input type='email' placeholder='Enter Email' value={email} onChange={e=>setEmail(e.target.value)} id='email'></input>
+        <label htmlFor='email' className='col-4 px-2 text-end'>Email :</label>
+        <input type='email' className='col-8' placeholder='Enter Email' value={email} onChange={e=>setEmail(e.target.value)} id='email'></input>
         </div><br/>
         <div>
-        <label htmlFor='password'>Password :</label>
-        <input type='password' placeholder='Enter Password' value={password} onChange={e=>setPassword(e.target.value)} id='password'></input>
+        <label htmlFor='password'  className='col-4 px-2 text-end'>Password :</label>
+        <input type='password' placeholder='Enter Password'  className='col-8' value={password} onChange={e=>setPassword(e.target.value)} id='password'></input>
         </div><br/>
         <select className='mb-3' id='optionvalue'  required>
         <option value="select" >Select</option>

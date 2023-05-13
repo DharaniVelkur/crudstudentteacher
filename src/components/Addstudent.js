@@ -27,20 +27,20 @@ let onadd=()=>{
 
 <h3>Student details</h3><br/>
 <div>
-  <label htmlFor='name'>Name :</label>
-  <input type='text' value={name} onChange={e=>setName(e.target.value)} id='name'></input>
+  <label htmlFor='name' className='col-4 px-2 text-end'>Name :</label>
+  <input type='text' className='col-8' value={name} onChange={e=>setName(e.target.value)} id='name'></input>
 </div><br/>
 <div>
-  <label htmlFor='age'>Age :</label>
-  <input id='name' type='number' onChange={e=>setAge(e.target.value)} value={age}></input>
+  <label htmlFor='age' className='col-4 px-2 text-end'>Age :</label>
+  <input id='name' className='col-8' type='number' onChange={e=>setAge(e.target.value)} value={age}></input>
 </div><br/>
 <div>
-  <label htmlFor='classs'>Class :</label>
-  <input id='classs' type='text' value={classs} onChange={e=>setClasss(e.target.value)}></input>
+  <label htmlFor='classs' className='col-4 px-2 text-end'>Class :</label>
+  <input id='classs' className='col-8' type='text' value={classs} onChange={e=>setClasss(e.target.value)}></input>
 </div><br/>
 <div>
-  <label htmlFor='cgpa'>CGPA :</label>
-  <input id='cgpa' type='text' value={cgpa} onChange={e=>setCgpa(e.target.value)}></input>
+  <label htmlFor='cgpa'className='col-4 px-2 text-end'>CGPA :</label>
+  <input id='cgpa' className='col-8' type='text' value={cgpa} onChange={e=>setCgpa(e.target.value)}></input>
 </div><br/>
 <button className='btn btn-primary' onClick={onadd} >Add</button>
 </div>

@@ -40,20 +40,20 @@ function Editpage(props) {
 
     <h3>Student details</h3><br/>
     <div>
-      <label htmlFor='name'>Name :</label>
-      <input type='text' value={name} onChange={e=>setName(e.target.value)} id='name'></input>
+      <label htmlFor='name' className='col-4 text-end px-2'>Name :</label>
+      <input type='text' value={name} className='col-8' onChange={e=>setName(e.target.value)} id='name'></input>
     </div><br/>
     <div>
-      <label htmlFor='age'>Age :</label>
-      <input id='name' type='number' onChange={e=>setAge(e.target.value)} value={age}></input>
+      <label htmlFor='age' className='col-4 text-end px-2'>Age :</label>
+      <input id='name' type='number' className='col-8' onChange={e=>setAge(e.target.value)} value={age}></input>
     </div><br/>
     <div>
-      <label htmlFor='classs'>Class :</label>
-      <input id='classs' type='text' value={classs} onChange={e=>setClasss(e.target.value)}></input>
+      <label htmlFor='classs' className='col-4 text-end px-2'>Class :</label>
+      <input id='classs' type='text' value={classs} className='col-8' onChange={e=>setClasss(e.target.value)}></input>
     </div><br/>
     <div>
-      <label htmlFor='cgpa'>CGPA :</label>
-      <input id='cgpa' type='text' value={cgpa} onChange={e=>setCgpa(e.target.value)}></input>
+      <label htmlFor='cgpa' className='col-4 text-end px-2'>CGPA :</label>
+      <input id='cgpa' type='text' value={cgpa} className='col-8' onChange={e=>setCgpa(e.target.value)}></input>
     </div><br/>
     <button className='btn btn-primary' onClick={onupdate}>UPDATE</button>
     </div>

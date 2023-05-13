@@ -10,10 +10,10 @@ let ondelete=(id)=>{
 
   return (
     <div className='overflow-x-scroll'>
-      <table className="table container mt-5 table-dark table-striped overflow-x-scroll" >
+      <table className="table container text-center mt-5 table-dark table-striped overflow-x-scroll" >
   <thead>
     <tr>
-      <th scope="col">STUDENT_ID</th>
+      <th  scope="col">STUDENT_ID</th>
       <th scope="col">NAME</th>
       <th scope="col">AGE</th>
       <th scope="col">CLASS</th>
@@ -33,11 +33,11 @@ let ondelete=(id)=>{
 
             <td style={{"cursor":"pointer"}} >
               <Link to={`/student/${student.id}`}>
-                <button>Edit</button>
+                <td><i className="fa-regular fa-pen-to-square mx-2"></i></td>
               </Link>
             </td>
             <td hidden={props.hidden} style={{"cursor":"pointer"}} >
-                <button onClick={()=>ondelete(student.id)}>Delete</button>
+                <td onClick={()=>ondelete(student.id)}><i className="fa-solid fa-trash mx-3"></i></td>
             </td>
  
           </tr>)

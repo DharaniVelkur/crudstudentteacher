@@ -37,7 +37,7 @@ let ondelete=(id)=>{
               </Link>
             </td>
             <td hidden={props.hidden} style={{"cursor":"pointer"}} >
-                <td onClick={()=>ondelete(student.id)}><i className="fa-solid fa-trash mx-3"></i></td>
+                <td onClick={()=>ondelete(student.id)}><i className="fa-solid fa-trash"></i></td>
             </td>
  
           </tr>)

@@ -11,7 +11,7 @@ function Addstudent(props) {
 //add a student
 let onadd=()=>{
     let addobj={
-        id:props.info.length+1,
+        id:props.info?.[props.info?.length-1]?.id+1 || 1,
         name:name,
         age:age,
         class:classs,
